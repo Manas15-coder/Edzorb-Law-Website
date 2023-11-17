@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth
+}
+
+.navbar {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffff;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-links ul li {
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.navbar-links ul a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.navbar.scrolled {
+    width: 100%;
+    background-color: #01273db2;
+}
+
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #ffff;
+}
+
+.open {
+    .navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        max-height: 400px;
+        height: 100%;
+    }
+}
+
+@media (max-width:769px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .navbar-links ul {
+        display: none;
+    }
+}
+
+#banner {
+    padding: 100px 0px;
+    background-image: url('./images/wave\ \(3\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffff;
+}
+
+@media (max-width:769px) {
+    #banner {
+        padding: 20px 10px;
+    }
+
+    .col-md-5 {
+        order: -1;
+    }
+
+    .banner-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+    }
+}
+
+.banner-content {
+    margin: 20px;
+}
+
+.heading-1 {
+    line-height: 1.6;
+}
+
+.banner-text-1 {
+    font-weight: 500;
+    text-shadow: rgba(255, 255, 255, 0.955) 0px 7px 29px 0px;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.banner-text-2 {
+    padding: 10px 20px;
+    background-color: #ffff;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: rgba(255, 255, 255, 0.955) 0px 7px 29px 0px;
+}
+
+.download-btn {
+    margin-top: 20px;
+    display: flex;
+    font-display: column;
+    gap: 20px;
+}
+
+.download-btn button img {
+    height: 50px;
+    width: 200px;
+    border: none;
+}
+
+.download-btn button {
+    border: none;
+}
+
+#users {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rating i {
+    color: #ffe234;
+    font-size: 2rem;
+}
+
+.carousel-item img {
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+
+
+#difference {
+    padding: 100px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fbfdff;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.difference-card-1,
+.difference-card-2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 40px;
+    text-align: left;
+    background-color: #01273d;
+    color: #ffff;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.difference-card-content {
+    padding: 20px;
+}
+
+@media only screen and (max-width:769px) {
+
+    .difference-card-1,
+    .difference-card-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .frame {
+        display: none;
+    }
+
+    .difference-card-content {
+        display: none;
+    }
+
+    .difference-img {
+        height: 100px;
+    }
+}
+
+.frame {
+    height: 100px;
+}
+
+.difference-img {
+    height: 100px;
+    border-radius: 15px;
+}
+
+.difference-img {
+    height: 400px;
+}
+
+ul li {
+    padding: 10px;
+}
+
+.difference-download-btn {
+    background-color: #ffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 2px solid #ffff;
+    color: #01273d;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.difference-download-btn:hover {
+    border: 2px #ffff solid;
+    background-color: transparent;
+    color: #ffff;
+}
+
+#testimonials {
+    background: linear-gradient(to top, #c3e5fd, #fcfbff);
+    padding: 100px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.testimonial-card:hover {
+    cursor: pointer;
+    transform: translateY(10px);
+}
+
+@media(max-width:769px) {
+    .testimonial-cards {
+        overflow-x: scroll
+    }
+}
+
+.testimonial-card {
+    margin: 20px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    transition: 6s ease-in-out infinite;
+}
+
+#getting-started {
+    padding: 100px 0px;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+}
+
+.getting-started-cards {
+    display: flex;
+    font-display: row;
+    padding: 20px;
+}
+
+.getting-started-card {
+    height: 500px;
+    margin: 20px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 3s ease-in-out infinite;
+}
+
+.getting-started-card.premium {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.getting-started-card img {
+    height: 100px;
+}
+
+.premium-img {
+    margin-top: -100px;
+}
+.getting-started-card:hover{
+    transform: translateY(10px);
+    background-color: #01273db1;
+    border-bottom-left-radius:50px;
+    border-top-right-radius:50px;
+    color: #ffff;
+    cursor: pointer;
+}
+.card-content i {
+    color: green;
+}
+.card-content{
+    padding: 20px;
+    text-align: left;
+}
+
+@media(max-width:769px) {
+    .getting-started-cards {
+        overflow-x: scroll;
+    }
+}
+.buy-now{
+    background-color: #01273d;
+    color: #ffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
