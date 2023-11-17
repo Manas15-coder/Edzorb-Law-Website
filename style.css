@@ -92,6 +92,10 @@ body {
     color: #ffff;
 }
 
+.banner-img {
+    animation: float 3s ease-in-out infinite;
+}
+
 @media (max-width:769px) {
     #banner {
         padding: 20px 10px;
@@ -295,7 +299,7 @@ ul li {
     padding: 100px 0px;
     justify-content: center;
     align-items: center;
-text-align: center;
+    text-align: center;
 }
 
 .getting-started-cards {
@@ -324,18 +328,21 @@ text-align: center;
 .premium-img {
     margin-top: -100px;
 }
-.getting-started-card:hover{
+
+.getting-started-card:hover {
     transform: translateY(10px);
     background-color: #01273db1;
-    border-bottom-left-radius:50px;
-    border-top-right-radius:50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
     color: #ffff;
     cursor: pointer;
 }
+
 .card-content i {
     color: green;
 }
-.card-content{
+
+.card-content {
     padding: 20px;
     text-align: left;
 }
@@ -345,10 +352,23 @@ text-align: center;
         overflow-x: scroll;
     }
 }
-.buy-now{
+
+.buy-now {
     background-color: #01273d;
     color: #ffff;
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
